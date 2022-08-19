@@ -1,11 +1,19 @@
 import React from 'react';
-import {Grid, Stack, Typography} from "@mui/material";
-import { SocialIcon } from 'react-social-icons';
+import {Box, Grid, Stack, Typography} from "@mui/material";
+import {SocialIcon} from 'react-social-icons';
+import Contours from "./contours.svg";
 
 function OverviewSection(props) {
     return (
-        <Grid container direction={`column`} justifyContent={`center`} alignItems={`center`}
-              minHeight={`100vh`} spacing={3}>
+        <Grid container direction={`column`} justifyContent={`center`} alignItems={`center`} spacing={3}
+              style={{
+                  backgroundImage: "url(" + Contours + ")",
+                  backgroundSize: "cover",
+                  height: "100vh",
+                  width: "100vw",
+                  marginTop: 0,
+                  marginBottom: 0,
+              }}>
             <Grid item>
                 <Typography variant={`h1`} textAlign={`center`}>
                     George Wigley
