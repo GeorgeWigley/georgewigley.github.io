@@ -1,5 +1,5 @@
 import React from 'react';
-import {Box, Grid, Stack, Typography} from "@mui/material";
+import {Box, Divider, Grid, Stack, Typography} from "@mui/material";
 import {SocialIcon} from 'react-social-icons';
 import Contours from "./contours.svg";
 
@@ -21,7 +21,9 @@ function OverviewSection(props) {
             </Grid>
             <Grid item>
                 <Typography variant={`h5`} textAlign={`center`} color={"#868686"}>
-                    Computer Science Student @ <a href={"https://www.bristol.ac.uk/"} style={{textDecoration: "none", color:"#868686"}}>University of Bristol</a>
+                    Computer Science Student @ <a href={"https://www.bristol.ac.uk/"}
+                                                  style={{textDecoration: "none", color: "#868686"}}>University of
+                    Bristol</a>
                 </Typography>
             </Grid>
             <br/>
@@ -33,9 +35,9 @@ function OverviewSection(props) {
                     <SocialIcon url={"https://www.instagram.com/george_wigley_/"}/>
                 </Stack>
             </Grid>
-            <br/>
+            <Divider />
         </Grid>
-    );
+);
 }
 
 export default OverviewSection;

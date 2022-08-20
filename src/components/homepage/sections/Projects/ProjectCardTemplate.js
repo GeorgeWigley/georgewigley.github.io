@@ -1,40 +1,44 @@
-import React, {useEffect, useState} from 'react';
-import {Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Grid, Typography} from "@mui/material";
+import React, {useState} from 'react';
+import {
+    Card,
+    CardActionArea,
+    CardContent,
+    CardMedia,
+    Grid, Typography,
+} from "@mui/material";
+import {SiAmazonaws, SiGnubash, SiGo} from "react-icons/si";
+import ProjectCardContent from "./ProjectCardContent";
+
+
 
 
 function ProjectCardTemplate(props) {
     const [currentImage, setCurrentImage] = useState(props.static)
 
     return (
-        <Grid item xs={12} lg={3}>
-            <Card style={{backgroundColor: "#141414", minHeight: "30vh"}}>
+        <Grid item xs={12} sm={6} md={4} lg={3}>
+            <Card style={{backgroundColor: "#101010", minHeight: "30vh"}}
+                  onMouseEnter={() => {
+                      setCurrentImage(props.animated)
+                  }}
+                  onMouseLeave={() => {
+                      setCurrentImage(props.static)
+                  }}>
                 <CardActionArea>
                     <CardMedia
                         component="img"
                         height="100%"
                         image={currentImage}
-                        alt="green iguana"
-                        onMouseEnter={() => {
-                            setCurrentImage(props.animated)
-                        }}
-                        onMouseLeave={() => {
-                            setCurrentImage(props.static)
-                        }}
-                        style={{opacity: 1}}
+                        alt="project image"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="div">
-                            Lizard
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                            Lizards are a widespread group of squamate reptiles, with over 6,000
-                            species, ranging across all continents except Antarctica
-                        </Typography>
+                        <ProjectCardContent name={props.name} tools={props.tools}/>
                     </CardContent>
                 </CardActionArea>
             </Card>
         </Grid>
-    );
+    )
+        ;
 }
 
 export default ProjectCardTemplate;

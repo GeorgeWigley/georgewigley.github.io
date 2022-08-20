@@ -3,7 +3,7 @@ import './App.css';
 import Homepage from "./components/homepage/Homepage";
 import {createTheme, CssBaseline} from "@mui/material";
 import {ThemeProvider} from "@emotion/react";
-import OverviewSection from "./components/homepage/sections/OverviewSection";
+import OverviewSection from "./components/homepage/sections/Overview/OverviewSection";
 import React from "react";
 
 const font = "'Montserrat', sans-serif"
