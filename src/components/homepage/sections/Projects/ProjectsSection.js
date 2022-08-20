@@ -7,7 +7,6 @@ import gol_Animated from "./gameOfLife/gol_Animated.gif";
 function ProjectsSection(props) {
     return (
         <>
-            <Box sx={{ boxShadow: 3 }} width={"100%"} height={"3px"}/>
             <Grid container direction={`column`} justifyContent={`center`} alignItems={`center`} width={`100%`}
                   height={`100%`}>
                 <Typography variant={`h1`} textAlign={`center`}>

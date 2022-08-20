@@ -21,7 +21,7 @@ function OverviewSection(props) {
             </Grid>
             <Grid item>
                 <Typography variant={`h5`} textAlign={`center`} color={"#868686"}>
-                    Computer Science Student @ University of Bristol
+                    Computer Science Student @ <a href={"https://www.bristol.ac.uk/"} style={{textDecoration: "none", color:"#868686"}}>University of Bristol</a>
                 </Typography>
             </Grid>
             <br/>
