@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.71bdb9ce.css",
-    "main.js": "/static/js/main.23cafdcf.js",
+    "main.js": "/static/js/main.e488f530.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/gol_Animated.gif": "/static/media/gol_Animated.9dac79b5451586a4e5b3.gif",
     "static/media/contours.svg": "/static/media/contours.a72c49719446359bbb22c8246d7b1ee3.svg",
@@ -9,11 +9,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.71bdb9ce.css.map": "/static/css/main.71bdb9ce.css.map",
-    "main.23cafdcf.js.map": "/static/js/main.23cafdcf.js.map",
+    "main.e488f530.js.map": "/static/js/main.e488f530.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71bdb9ce.css",
-    "static/js/main.23cafdcf.js"
+    "static/js/main.e488f530.js"
   ]
 }
