@@ -3,6 +3,11 @@ import {Box, Grid, Typography} from "@mui/material";
 import ProjectCardTemplate from "./ProjectCardTemplate";
 import gol_Static from "./gameOfLife/gol_Static.jpg";
 import gol_Animated from "./gameOfLife/gol_Animated.gif";
+import whiplash_Static from "./whiplash/whiplash_Static.gif";
+import whiplash_Animated from "./whiplash/whiplash_Animated.gif";
+import pdv_Static from "./playlistDataViewer/PDV_Static.jpg";
+import pdv_Animated from "./playlistDataViewer/PDV_Animated.gif";
+
 import {
     SiAdobephotoshop,
     SiAmazonaws,
@@ -57,8 +62,8 @@ function ProjectsSection(props) {
                                 <SiBlender key={4} size={"3rem"}/>,
                                 <SiAdobephotoshop key={5} size={"3rem"}/>,
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={whiplash_Static}
+                            animated={whiplash_Animated}
                         />
                         <ProjectCardTemplate
                             name={"Stats for Spotify Playlist"}
@@ -72,8 +77,8 @@ function ProjectsSection(props) {
                                 <SiWikidata key={4} size={"3rem"}/>,
                                 <SiWikipedia key={5} size={"3rem"}/>,
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={pdv_Static}
+                            animated={pdv_Static}
                         />
                         <ProjectCardTemplate
                             name={"Scotland Yard AI"}
