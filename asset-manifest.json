@@ -1,12 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.71bdb9ce.css",
-    "main.js": "/static/js/main.0593e5d0.js",
+    "main.js": "/static/js/main.67dee1a0.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/scotlandYard_Animated.gif": "/static/media/scotlandYard_Animated.1fc554c6c66b929173ea.gif",
     "static/media/whiplash_Animated.gif": "/static/media/whiplash_Animated.01f1c9994e61edfd0c1f.gif",
     "static/media/gol_Animated.gif": "/static/media/gol_Animated.9dac79b5451586a4e5b3.gif",
     "static/media/scotlandYard_Static.gif": "/static/media/scotlandYard_Static.ef0d5e9593bfb32e2d38.gif",
+    "static/media/plasticWasteDrift.jpg": "/static/media/plasticWasteDrift.1ad804f81b24506d0768.jpg",
+    "static/media/dungeonCrawler.png": "/static/media/dungeonCrawler.55a89a4f1e30ebb4e3b5.png",
+    "static/media/spoonsStats.png": "/static/media/spoonsStats.8975ed04e1f3c666c514.png",
+    "static/media/spe.png": "/static/media/spe.87eef6ecf7e939082af6.png",
     "static/media/whiplash_Static.gif": "/static/media/whiplash_Static.b291c9e63a1d96b49307.gif",
     "static/media/PDV_Static.jpg": "/static/media/PDV_Static.950692eb0ea0cb77bee0.jpg",
     "static/media/contours.svg": "/static/media/contours.a72c49719446359bbb22c8246d7b1ee3.svg",
@@ -14,11 +18,11 @@
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.71bdb9ce.css.map": "/static/css/main.71bdb9ce.css.map",
-    "main.0593e5d0.js.map": "/static/js/main.0593e5d0.js.map",
+    "main.67dee1a0.js.map": "/static/js/main.67dee1a0.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71bdb9ce.css",
-    "static/js/main.0593e5d0.js"
+    "static/js/main.67dee1a0.js"
   ]
 }
