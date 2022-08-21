@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Box, Grid, Typography} from "@mui/material";
 import ProjectCardTemplate from "./ProjectCardTemplate";
 import gol_Static from "./gameOfLife/gol_Static.jpg";
@@ -6,7 +6,8 @@ import gol_Animated from "./gameOfLife/gol_Animated.gif";
 import whiplash_Static from "./whiplash/whiplash_Static.gif";
 import whiplash_Animated from "./whiplash/whiplash_Animated.gif";
 import pdv_Static from "./playlistDataViewer/PDV_Static.jpg";
-import pdv_Animated from "./playlistDataViewer/PDV_Animated.gif";
+import scotlandYard_Static from "./scotlandYard/scotlandYard_Static.gif";
+import scotlandYard_Animated from "./scotlandYard/scotlandYard_Animated.gif";
 
 import {
     SiAdobephotoshop,
@@ -36,6 +37,18 @@ import {
 import {BiNetworkChart} from "react-icons/bi";
 
 function ProjectsSection(props) {
+
+    // preload images
+    useEffect(() => {
+        new Image().src = gol_Static;
+        new Image().src = gol_Animated;
+        new Image().src = whiplash_Static;
+        new Image().src = whiplash_Animated;
+        new Image().src = pdv_Static;
+        new Image().src = scotlandYard_Static;
+        new Image().src = scotlandYard_Animated;
+    }, [])
+
     return (
         <>
             <Grid container direction={`column`} justifyContent={`center`} alignItems={`flex-start`} width={`100%`}
@@ -87,8 +100,8 @@ function ProjectsSection(props) {
                                 <BiNetworkChart key={2} size={"3rem"}/>,
                                 <SiIntellijidea key={3} size={"3rem"}/>
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={scotlandYard_Static}
+                            animated={scotlandYard_Animated}
                         />
                         <ProjectCardTemplate
                             name={"Plastic Waste Drift in Oceans"}
