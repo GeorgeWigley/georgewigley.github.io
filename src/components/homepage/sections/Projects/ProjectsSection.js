@@ -8,36 +8,19 @@ import whiplash_Animated from "./whiplash/whiplash_Animated.gif";
 import pdv_Static from "./playlistDataViewer/PDV_Static.jpg";
 import scotlandYard_Static from "./scotlandYard/scotlandYard_Static.gif";
 import scotlandYard_Animated from "./scotlandYard/scotlandYard_Animated.gif";
-
+import plasticDrift from "./boeingHackathon/plasticWasteDrift.jpg";
+import spoonsStats from "./spoonsStats/spoonsStats.png";
+import dungeonCrawler from "./dungeonCrawler/dungeonCrawler.png";
+import spe from "./spe/spe.png";
 import {
-    SiAdobephotoshop,
-    SiAmazonaws,
-    SiBlender, SiCplusplus,
-    SiCsharp,
-    SiExpress,
-    SiGnubash,
-    SiGo,
-    SiGooglecloud,
-    SiHeroku, SiIbm,
-    SiIntellijidea,
-    SiJava,
-    SiJavascript,
-    SiNodedotjs, SiOpengl, SiPostgresql,
-    SiPycharm,
-    SiPython,
-    SiReact,
-    SiSpotify,
-    SiSpringboot,
-    SiSpringsecurity,
-    SiSteam,
-    SiUnity,
-    SiWikidata,
-    SiWikipedia
+    SiAdobephotoshop, SiAmazonaws, SiBlender, SiCplusplus, SiCsharp, SiExpress, SiGnubash, SiGo, SiGooglecloud,
+    SiHeroku, SiIbm, SiIntellijidea, SiJava, SiJavascript, SiNodedotjs, SiOpengl, SiPostgresql, SiPycharm, SiPython,
+    SiReact, SiSpotify, SiSpringboot, SiSteam, SiUnity, SiWikidata, SiWikipedia
 } from "react-icons/si";
 import {BiNetworkChart} from "react-icons/bi";
 
-function ProjectsSection(props) {
 
+function ProjectsSection(props) {
     // preload images
     useEffect(() => {
         new Image().src = gol_Static;
@@ -109,8 +92,8 @@ function ProjectsSection(props) {
                                 <SiPython key={1} size={"3rem"}/>,
                                 <SiPycharm key={2} size={"3rem"}/>
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={plasticDrift}
+                            animated={plasticDrift}
                         />
                         <ProjectCardTemplate
                             name={"Spoons Stats"}
@@ -123,8 +106,8 @@ function ProjectsSection(props) {
                                 <SiGooglecloud key={6} size={"3rem"}/>,
                                 <SiHeroku key={7} size={"3rem"}/>,
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={spoonsStats}
+                            animated={spoonsStats}
                         />
                         <ProjectCardTemplate
                             name={"Software Engineering Project"}
@@ -136,8 +119,8 @@ function ProjectsSection(props) {
                                 <SiAmazonaws key={6} size={"3rem"}/>,
                                 <SiHeroku key={7} size={"3rem"}/>,
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={spe}
+                            animated={spe}
                         />
                         <ProjectCardTemplate
                             name={"Dungeon Crawler Game"}
@@ -145,8 +128,8 @@ function ProjectsSection(props) {
                                 <SiCplusplus key={1} size={"3rem"}/>,
                                 <SiOpengl key={2} size={"3rem"}/>,
                             ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
+                            static={dungeonCrawler}
+                            animated={dungeonCrawler}
                         />
                     </Grid>
                 </Grid>
