@@ -15,7 +15,7 @@ function OverviewSection(props) {
                   marginBottom: 0,
               }}>
             <Grid item>
-                <Typography variant={`h1`} textAlign={`center`}>
+                <Typography variant={`h1`} textAlign={`center`} fontWeight={500} >
                     George Wigley
                 </Typography>
             </Grid>

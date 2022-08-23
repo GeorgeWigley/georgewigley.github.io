@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Box, Grid, Typography} from "@mui/material";
+import {Box, Divider, Grid, Typography} from "@mui/material";
 import ProjectCardTemplate from "./ProjectCardTemplate";
 import gol_Static from "./gameOfLife/gol_Static.jpg";
 import gol_Animated from "./gameOfLife/gol_Animated.gif";
@@ -36,8 +36,13 @@ function ProjectsSection(props) {
         <>
             <Grid container direction={`column`} justifyContent={`center`} alignItems={`flex-start`} width={`100%`}
                   height={`100%`}>
+                <Grid item xs={12} width={"100%"} >
+                    <Typography variant={"h2"} textAlign={"left"} p={3} >
+                        Some of my projects
+                    </Typography>
+                </Grid>
                 <Grid item xs={12}>
-                    <Grid container spacing={2} p={3} width={`100%`}>
+                    <Grid container p={3} pt={2} width={`100%`} spacing={2} >
                         <ProjectCardTemplate
                             name={"Parallel Game of Life"}
                             tools={[
@@ -60,6 +65,19 @@ function ProjectsSection(props) {
                             ]}
                             static={whiplash_Static}
                             animated={whiplash_Animated}
+                        />
+                        <ProjectCardTemplate
+                            name={"Spoons Stats"}
+                            tools={[
+                                <SiJavascript key={1} size={"3rem"}/>,
+                                <SiReact key={2} size={"3rem"}/>,
+                                <SiNodedotjs key={3} size={"3rem"}/>,
+                                <SiExpress key={4} size={"3rem"}/>,
+                                <SiHeroku key={5} size={"3rem"}/>,
+                                <SiGooglecloud key={6} size={"3rem"}/>,
+                            ]}
+                            static={spoonsStats}
+                            animated={spoonsStats}
                         />
                         <ProjectCardTemplate
                             name={"Stats for Spotify Playlist"}
@@ -95,20 +113,7 @@ function ProjectsSection(props) {
                             static={plasticDrift}
                             animated={plasticDrift}
                         />
-                        <ProjectCardTemplate
-                            name={"Spoons Stats"}
-                            tools={[
-                                <SiJavascript key={1} size={"3rem"}/>,
-                                <SiReact key={2} size={"3rem"}/>,
-                                <SiNodedotjs key={3} size={"3rem"}/>,
-                                <SiExpress key={4} size={"3rem"}/>,
-                                <SiHeroku key={5} size={"3rem"}/>,
-                                <SiGooglecloud key={6} size={"3rem"}/>,
-                                <SiHeroku key={7} size={"3rem"}/>,
-                            ]}
-                            static={spoonsStats}
-                            animated={spoonsStats}
-                        />
+
                         <ProjectCardTemplate
                             name={"Software Engineering Project"}
                             tools={[

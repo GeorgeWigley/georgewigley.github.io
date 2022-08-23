@@ -4,9 +4,8 @@ import {
     CardActionArea,
     CardContent,
     CardMedia,
-    Grid, Typography,
+    Grid
 } from "@mui/material";
-import {SiAmazonaws, SiGnubash, SiGo} from "react-icons/si";
 import ProjectCardContent from "./ProjectCardContent";
 
 
@@ -16,8 +15,8 @@ function ProjectCardTemplate(props) {
     const [currentImage, setCurrentImage] = useState(props.static)
 
     return (
-        <Grid item xs={12} sm={6} md={4} lg={3}>
-            <Card style={{backgroundColor: "#101010", minHeight: "30vh"}}
+        <Grid item xs={12} sm={6} md={4} lg={3} >
+            <Card style={{backgroundColor: "#101010", minHeight: "30vh", border: "3px solid #202020"}}
                   onMouseEnter={() => {
                       setCurrentImage(props.animated)
                   }}
