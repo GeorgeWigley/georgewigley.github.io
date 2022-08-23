@@ -18,6 +18,7 @@ import {
     SiReact, SiSpotify, SiSpringboot, SiSteam, SiUnity, SiWikidata, SiWikipedia
 } from "react-icons/si";
 import {BiNetworkChart} from "react-icons/bi";
+import {IconContext} from "react-icons";
 
 
 function ProjectsSection(props) {
@@ -34,111 +35,113 @@ function ProjectsSection(props) {
 
     return (
         <>
-            <Grid container direction={`column`} justifyContent={`center`} alignItems={`flex-start`} width={`100%`}
-                  height={`100%`}>
-                <Grid item xs={12} width={"100%"} >
-                    <Typography variant={"h2"} textAlign={"left"} p={3} >
-                        Some of my projects
-                    </Typography>
-                </Grid>
-                <Grid item xs={12}>
-                    <Grid container p={3} pt={2} width={`100%`} spacing={2} >
-                        <ProjectCardTemplate
-                            name={"Parallel Game of Life"}
-                            tools={[
-                                <SiGo key={2} size={"3rem"}/>,
-                                <SiAmazonaws key={1} size={"3rem"}/>,
-                                <SiGnubash key={3} size={"3rem"}/>,
-                                <SiIntellijidea key={4} size={"3rem"}/>
-                            ]}
-                            static={gol_Static}
-                            animated={gol_Animated}
-                        />
-                        <ProjectCardTemplate
-                            name={"Whiplash"}
-                            tools={[
-                                <SiUnity key={1} size={"3rem"}/>,
-                                <SiCsharp key={2} size={"3rem"}/>,
-                                <SiSteam key={3} size={"3rem"}/>,
-                                <SiBlender key={4} size={"3rem"}/>,
-                                <SiAdobephotoshop key={5} size={"3rem"}/>,
-                            ]}
-                            static={whiplash_Static}
-                            animated={whiplash_Animated}
-                        />
-                        <ProjectCardTemplate
-                            name={"Spoons Stats"}
-                            tools={[
-                                <SiJavascript key={1} size={"3rem"}/>,
-                                <SiReact key={2} size={"3rem"}/>,
-                                <SiNodedotjs key={3} size={"3rem"}/>,
-                                <SiExpress key={4} size={"3rem"}/>,
-                                <SiHeroku key={5} size={"3rem"}/>,
-                                <SiGooglecloud key={6} size={"3rem"}/>,
-                            ]}
-                            static={spoonsStats}
-                            animated={spoonsStats}
-                        />
-                        <ProjectCardTemplate
-                            name={"Stats for Spotify Playlist"}
-                            tools={[
-                                <SiJavascript key={1} size={"3rem"}/>,
-                                <SiReact key={2} size={"3rem"}/>,
-                                <SiNodedotjs key={8} size={"3rem"}/>,
-                                <SiExpress key={7} size={"3rem"}/>,
-                                <SiHeroku key={6} size={"3rem"}/>,
-                                <SiSpotify key={3} size={"3rem"}/>,
-                                <SiWikidata key={4} size={"3rem"}/>,
-                                <SiWikipedia key={5} size={"3rem"}/>,
-                            ]}
-                            static={pdv_Static}
-                            animated={pdv_Static}
-                        />
-                        <ProjectCardTemplate
-                            name={"Scotland Yard AI"}
-                            tools={[
-                                <SiJava key={1} size={"3rem"}/>,
-                                <BiNetworkChart key={2} size={"3rem"}/>,
-                                <SiIntellijidea key={3} size={"3rem"}/>
-                            ]}
-                            static={scotlandYard_Static}
-                            animated={scotlandYard_Animated}
-                        />
-                        <ProjectCardTemplate
-                            name={"Plastic Waste Drift in Oceans"}
-                            tools={[
-                                <SiPython key={1} size={"3rem"}/>,
-                                <SiPycharm key={2} size={"3rem"}/>
-                            ]}
-                            static={plasticDrift}
-                            animated={plasticDrift}
-                        />
+            <IconContext.Provider value={{color: "#606060", className: "global-class-name", size:"3rem"}}>
+                <Grid container direction={`column`} justifyContent={`center`} alignItems={`flex-start`} width={`100%`}
+                      height={`100%`}>
+                    <Grid item xs={12} width={"100%"}>
+                        <Typography variant={"h2"} textAlign={"left"} p={3}>
+                            Some of my projects
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Grid container p={3} pt={2} width={`100%`} spacing={2}>
+                            <ProjectCardTemplate
+                                name={"Parallel Game of Life"}
+                                tools={[
+                                    <SiGo key={2}  />,
+                                    <SiAmazonaws key={1} />,
+                                    <SiGnubash key={3} />,
+                                    <SiIntellijidea key={4} />
+                                ]}
+                                static={gol_Static}
+                                animated={gol_Animated}
+                            />
+                            <ProjectCardTemplate
+                                name={"Whiplash"}
+                                tools={[
+                                    <SiUnity key={1} />,
+                                    <SiCsharp key={2} />,
+                                    <SiSteam key={3} />,
+                                    <SiBlender key={4} />,
+                                    <SiAdobephotoshop key={5} />,
+                                ]}
+                                static={whiplash_Static}
+                                animated={whiplash_Animated}
+                            />
+                            <ProjectCardTemplate
+                                name={"Spoons Stats"}
+                                tools={[
+                                    <SiJavascript key={1} />,
+                                    <SiReact key={2} />,
+                                    <SiNodedotjs key={3} />,
+                                    <SiExpress key={4} />,
+                                    <SiHeroku key={5} />,
+                                    <SiGooglecloud key={6} />,
+                                ]}
+                                static={spoonsStats}
+                                animated={spoonsStats}
+                            />
+                            <ProjectCardTemplate
+                                name={"Stats for Spotify Playlist"}
+                                tools={[
+                                    <SiJavascript key={1} />,
+                                    <SiReact key={2} />,
+                                    <SiNodedotjs key={8} />,
+                                    <SiExpress key={7} />,
+                                    <SiHeroku key={6} />,
+                                    <SiSpotify key={3} />,
+                                    <SiWikidata key={4} />,
+                                    <SiWikipedia key={5} />,
+                                ]}
+                                static={pdv_Static}
+                                animated={pdv_Static}
+                            />
+                            <ProjectCardTemplate
+                                name={"Scotland Yard AI"}
+                                tools={[
+                                    <SiJava key={1} />,
+                                    <BiNetworkChart key={2} />,
+                                    <SiIntellijidea key={3} />
+                                ]}
+                                static={scotlandYard_Static}
+                                animated={scotlandYard_Animated}
+                            />
+                            <ProjectCardTemplate
+                                name={"Plastic Waste Drift in Oceans"}
+                                tools={[
+                                    <SiPython key={1} />,
+                                    <SiPycharm key={2} />
+                                ]}
+                                static={plasticDrift}
+                                animated={plasticDrift}
+                            />
 
-                        <ProjectCardTemplate
-                            name={"Software Engineering Project"}
-                            tools={[
-                                <SiJava key={1} size={"3rem"}/>,
-                                <SiSpringboot key={2} size={"3rem"}/>,
-                                <SiPostgresql key={4} size={"3rem"}/>,
-                                <SiIbm key={5} size={"3rem"}/>,
-                                <SiAmazonaws key={6} size={"3rem"}/>,
-                                <SiHeroku key={7} size={"3rem"}/>,
-                            ]}
-                            static={spe}
-                            animated={spe}
-                        />
-                        <ProjectCardTemplate
-                            name={"Dungeon Crawler Game"}
-                            tools={[
-                                <SiCplusplus key={1} size={"3rem"}/>,
-                                <SiOpengl key={2} size={"3rem"}/>,
-                            ]}
-                            static={dungeonCrawler}
-                            animated={dungeonCrawler}
-                        />
+                            <ProjectCardTemplate
+                                name={"Software Engineering Project"}
+                                tools={[
+                                    <SiJava key={1} />,
+                                    <SiSpringboot key={2} />,
+                                    <SiPostgresql key={4} />,
+                                    <SiIbm key={5} />,
+                                    <SiAmazonaws key={6} />,
+                                    <SiHeroku key={7} />,
+                                ]}
+                                static={spe}
+                                animated={spe}
+                            />
+                            <ProjectCardTemplate
+                                name={"Dungeon Crawler Game"}
+                                tools={[
+                                    <SiCplusplus key={1} />,
+                                    <SiOpengl key={2} />,
+                                ]}
+                                static={dungeonCrawler}
+                                animated={dungeonCrawler}
+                            />
+                        </Grid>
                     </Grid>
                 </Grid>
-            </Grid>
+            </IconContext.Provider>
         </>
     );
 }
