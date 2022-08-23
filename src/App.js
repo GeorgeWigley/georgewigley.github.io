@@ -9,6 +9,7 @@ import {
     Routes
 } from "react-router-dom";
 import ProjectPageGol from "./components/projectPages/gol/ProjectPageGol";
+import ProjectPageWhiplash from "./components/projectPages/whiplash/ProjectPageWhiplash";
 
 let themeDark = createTheme({
     typography: {
@@ -42,6 +43,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Homepage/>} />
                         <Route path="/gol" element={<ProjectPageGol/>} />
+                        <Route path="/whiplash" element={<ProjectPageWhiplash/>} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>

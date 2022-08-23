@@ -4,7 +4,7 @@ import ProjectPageTemplate from "../ProjectPageTemplate";
 function ProjectPageGol(props) {
     return (
         <div>
-            <ProjectPageTemplate/>
+            <ProjectPageTemplate title={"Parallel Game of Life"}/>
         </div>
     );
 }

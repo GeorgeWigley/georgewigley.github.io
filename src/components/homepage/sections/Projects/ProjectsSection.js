@@ -68,7 +68,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={whiplash_Static}
                                 animated={whiplash_Animated}
-                                link={"/gol"}
+                                link={"/whiplash"}
                             />
                             <ProjectCardTemplate
                                 name={"Spoons Stats"}
