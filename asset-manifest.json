@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.71bdb9ce.css",
-    "main.js": "/static/js/main.67dee1a0.js",
+    "main.js": "/static/js/main.158fb500.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/scotlandYard_Animated.gif": "/static/media/scotlandYard_Animated.1fc554c6c66b929173ea.gif",
     "static/media/whiplash_Animated.gif": "/static/media/whiplash_Animated.01f1c9994e61edfd0c1f.gif",
@@ -15,14 +15,13 @@
     "static/media/PDV_Static.jpg": "/static/media/PDV_Static.950692eb0ea0cb77bee0.jpg",
     "static/media/contours.svg": "/static/media/contours.a72c49719446359bbb22c8246d7b1ee3.svg",
     "static/media/gol_Static.jpg": "/static/media/gol_Static.3336ca9e117121a65099.jpg",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.71bdb9ce.css.map": "/static/css/main.71bdb9ce.css.map",
-    "main.67dee1a0.js.map": "/static/js/main.67dee1a0.js.map",
+    "main.158fb500.js.map": "/static/js/main.158fb500.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71bdb9ce.css",
-    "static/js/main.67dee1a0.js"
+    "static/js/main.158fb500.js"
   ]
 }
