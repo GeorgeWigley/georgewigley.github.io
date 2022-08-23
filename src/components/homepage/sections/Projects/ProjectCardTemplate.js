@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import {motion} from "framer-motion";
 import ProjectCardContent from "./ProjectCardContent";
+import {Link} from "react-router-dom";
 
 
 function ProjectCardTemplate(props) {
@@ -31,7 +32,7 @@ function ProjectCardTemplate(props) {
                           setCurrentImage(props.static)
                       }}
                 >
-                    <CardActionArea>
+                    <CardActionArea component={Link} to={props.link}>
                         <CardMedia
                             component="img"
                             height="100%"

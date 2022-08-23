@@ -3,8 +3,13 @@ import Homepage from "./components/homepage/Homepage";
 import {createTheme, CssBaseline, responsiveFontSizes} from "@mui/material";
 import {ThemeProvider} from "@emotion/react";
 import React from "react";
+import {
+    BrowserRouter,
+    Route,
+    Routes
+} from "react-router-dom";
+import ProjectPageGol from "./components/projectPages/gol/ProjectPageGol";
 
-const font = "'Montserrat', sans-serif"
 let themeDark = createTheme({
     typography: {
         fontFamily: "'Montserrat', sans-serif"
@@ -26,17 +31,21 @@ themeDark = responsiveFontSizes(themeDark);
 
 function App() {
     return (
-        <>
-            <style>
+        <div className="App">
+
+        <style>
                 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
             </style>
             <ThemeProvider theme={themeDark}>
                 <CssBaseline/>
-                <div className="App">
-                    <Homepage/>
-                </div>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Homepage/>} />
+                        <Route path="/gol" element={<ProjectPageGol/>} />
+                    </Routes>
+                </BrowserRouter>
             </ThemeProvider>
-        </>
+        </div>
     );
 }
 

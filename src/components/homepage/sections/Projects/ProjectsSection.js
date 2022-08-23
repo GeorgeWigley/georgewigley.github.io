@@ -55,6 +55,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={gol_Static}
                                 animated={gol_Animated}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Whiplash"}
@@ -67,6 +68,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={whiplash_Static}
                                 animated={whiplash_Animated}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Spoons Stats"}
@@ -80,6 +82,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={spoonsStats}
                                 animated={spoonsStats}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Stats for Spotify Playlist"}
@@ -95,6 +98,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={pdv_Static}
                                 animated={pdv_Static}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Scotland Yard AI"}
@@ -105,6 +109,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={scotlandYard_Static}
                                 animated={scotlandYard_Animated}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Plastic Waste Drift in Oceans"}
@@ -114,6 +119,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={plasticDrift}
                                 animated={plasticDrift}
+                                link={"/gol"}
                             />
 
                             <ProjectCardTemplate
@@ -128,6 +134,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={spe}
                                 animated={spe}
+                                link={"/gol"}
                             />
                             <ProjectCardTemplate
                                 name={"Dungeon Crawler Game"}
@@ -137,6 +144,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={dungeonCrawler}
                                 animated={dungeonCrawler}
+                                link={"/gol"}
                             />
                         </Grid>
                     </Grid>
