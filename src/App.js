@@ -4,7 +4,7 @@ import {createTheme, CssBaseline, responsiveFontSizes} from "@mui/material";
 import {ThemeProvider} from "@emotion/react";
 import React from "react";
 import {
-    BrowserRouter,
+    HashRouter,
     Route,
     Routes
 } from "react-router-dom";
@@ -39,13 +39,13 @@ function App() {
             </style>
             <ThemeProvider theme={themeDark}>
                 <CssBaseline/>
-                <BrowserRouter>
+                <HashRouter>
                     <Routes>
                         <Route path="/" element={<Homepage/>} />
                         <Route path="/gol" element={<ProjectPageGol/>} />
                         <Route path="/whiplash" element={<ProjectPageWhiplash/>} />
                     </Routes>
-                </BrowserRouter>
+                </HashRouter>
             </ThemeProvider>
         </div>
     );

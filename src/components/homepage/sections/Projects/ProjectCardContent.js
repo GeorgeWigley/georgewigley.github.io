@@ -1,4 +1,4 @@
-import {Grid, Tooltip, Typography} from "@mui/material";
+import {Box, Grid, Tooltip, Typography} from "@mui/material";
 import {SiAmazonaws, SiGnubash, SiGo} from "react-icons/si";
 import React from "react";
 
@@ -8,11 +8,13 @@ export default function ProjectCardContent(props) {
         let result = []
         for (const tool of props.tools) {
             result.push(
-                <Tooltip key={result.length} title={tool.type.name.substring(2)}>
-                    <Grid item>
-                        {tool}
-                    </Grid>
-                </Tooltip>
+                <Grid item key={result.length}>
+                    <Tooltip  title={tool.type.name.substring(2)}>
+                        <div>
+                            {tool}
+                        </div>
+                    </Tooltip>
+                </Grid>
             )
         }
         return result

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Box, Divider, Grid, Typography} from "@mui/material";
+import {Box, Divider, Grid, Tooltip, Typography} from "@mui/material";
 import ProjectCardTemplate from "./ProjectCardTemplate";
 import gol_Static from "./gameOfLife/gol_Static.jpg";
 import gol_Animated from "./gameOfLife/gol_Animated.gif";
@@ -35,23 +35,23 @@ function ProjectsSection(props) {
 
     return (
         <>
-            <IconContext.Provider value={{color: "#606060", className: "global-class-name", size:"3rem"}}>
+            <IconContext.Provider value={{color: "#606060", className: "global-class-name", size: "3rem"}}>
                 <Grid container direction={`column`} justifyContent={`center`} alignItems={`flex-start`} width={`100%`}
                       height={`100%`}>
                     <Grid item xs={12} width={"100%"}>
-                        <Typography variant={"h2"} textAlign={"left"} p={3}>
-                            Some of my projects
-                        </Typography>
+                            <Typography variant={"h2"} textAlign={"left"} p={3}>
+                                Some of my projects
+                            </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container p={3} pt={2} width={`100%`} spacing={2}>
                             <ProjectCardTemplate
                                 name={"Parallel Game of Life"}
                                 tools={[
-                                    <SiGo key={2}  />,
-                                    <SiAmazonaws key={1} />,
-                                    <SiGnubash key={3} />,
-                                    <SiIntellijidea key={4} />
+                                    <SiGo key={2}/>,
+                                    <SiAmazonaws key={1}/>,
+                                    <SiGnubash key={3}/>,
+                                    <SiIntellijidea key={4}/>
                                 ]}
                                 static={gol_Static}
                                 animated={gol_Animated}
@@ -60,11 +60,11 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Whiplash"}
                                 tools={[
-                                    <SiUnity key={1} />,
-                                    <SiCsharp key={2} />,
-                                    <SiSteam key={3} />,
-                                    <SiBlender key={4} />,
-                                    <SiAdobephotoshop key={5} />,
+                                    <SiUnity key={1}/>,
+                                    <SiCsharp key={2}/>,
+                                    <SiSteam key={3}/>,
+                                    <SiBlender key={4}/>,
+                                    <SiAdobephotoshop key={5}/>,
                                 ]}
                                 static={whiplash_Static}
                                 animated={whiplash_Animated}
@@ -73,12 +73,12 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Spoons Stats"}
                                 tools={[
-                                    <SiJavascript key={1} />,
-                                    <SiReact key={2} />,
-                                    <SiNodedotjs key={3} />,
-                                    <SiExpress key={4} />,
-                                    <SiHeroku key={5} />,
-                                    <SiGooglecloud key={6} />,
+                                    <SiJavascript key={1}/>,
+                                    <SiReact key={2}/>,
+                                    <SiNodedotjs key={3}/>,
+                                    <SiExpress key={4}/>,
+                                    <SiHeroku key={5}/>,
+                                    <SiGooglecloud key={6}/>,
                                 ]}
                                 static={spoonsStats}
                                 animated={spoonsStats}
@@ -87,14 +87,14 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Stats for Spotify Playlist"}
                                 tools={[
-                                    <SiJavascript key={1} />,
-                                    <SiReact key={2} />,
-                                    <SiNodedotjs key={8} />,
-                                    <SiExpress key={7} />,
-                                    <SiHeroku key={6} />,
-                                    <SiSpotify key={3} />,
-                                    <SiWikidata key={4} />,
-                                    <SiWikipedia key={5} />,
+                                    <SiJavascript key={1}/>,
+                                    <SiReact key={2}/>,
+                                    <SiNodedotjs key={8}/>,
+                                    <SiExpress key={7}/>,
+                                    <SiHeroku key={6}/>,
+                                    <SiSpotify key={3}/>,
+                                    <SiWikidata key={4}/>,
+                                    <SiWikipedia key={5}/>,
                                 ]}
                                 static={pdv_Static}
                                 animated={pdv_Static}
@@ -103,9 +103,9 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Scotland Yard AI"}
                                 tools={[
-                                    <SiJava key={1} />,
-                                    <BiNetworkChart key={2} />,
-                                    <SiIntellijidea key={3} />
+                                    <SiJava key={1}/>,
+                                    <BiNetworkChart key={2}/>,
+                                    <SiIntellijidea key={3}/>
                                 ]}
                                 static={scotlandYard_Static}
                                 animated={scotlandYard_Animated}
@@ -114,8 +114,8 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Plastic Waste Drift in Oceans"}
                                 tools={[
-                                    <SiPython key={1} />,
-                                    <SiPycharm key={2} />
+                                    <SiPython key={1}/>,
+                                    <SiPycharm key={2}/>
                                 ]}
                                 static={plasticDrift}
                                 animated={plasticDrift}
@@ -125,12 +125,12 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Software Engineering Project"}
                                 tools={[
-                                    <SiJava key={1} />,
-                                    <SiSpringboot key={2} />,
-                                    <SiPostgresql key={4} />,
-                                    <SiIbm key={5} />,
-                                    <SiAmazonaws key={6} />,
-                                    <SiHeroku key={7} />,
+                                    <SiJava key={1}/>,
+                                    <SiSpringboot key={2}/>,
+                                    <SiPostgresql key={4}/>,
+                                    <SiIbm key={5}/>,
+                                    <SiAmazonaws key={6}/>,
+                                    <SiHeroku key={7}/>,
                                 ]}
                                 static={spe}
                                 animated={spe}
@@ -139,8 +139,8 @@ function ProjectsSection(props) {
                             <ProjectCardTemplate
                                 name={"Dungeon Crawler Game"}
                                 tools={[
-                                    <SiCplusplus key={1} />,
-                                    <SiOpengl key={2} />,
+                                    <SiCplusplus key={1}/>,
+                                    <SiOpengl key={2}/>,
                                 ]}
                                 static={dungeonCrawler}
                                 animated={dungeonCrawler}
