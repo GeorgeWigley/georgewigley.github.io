@@ -33,17 +33,16 @@ themeDark = responsiveFontSizes(themeDark);
 function App() {
     return (
         <div className="App">
-
-        <style>
+            <style>
                 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
             </style>
             <ThemeProvider theme={themeDark}>
                 <CssBaseline/>
                 <HashRouter>
                     <Routes>
-                        <Route path="/" element={<Homepage/>} />
-                        <Route path="/gol" element={<ProjectPageGol/>} />
-                        <Route path="/whiplash" element={<ProjectPageWhiplash/>} />
+                        <Route path="/" element={<Homepage/>}/>
+                        <Route path="/gol" element={<ProjectPageGol/>}/>
+                        <Route path="/whiplash" element={<ProjectPageWhiplash/>}/>
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
