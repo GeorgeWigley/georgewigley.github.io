@@ -98,7 +98,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={pdv_Static}
                                 animated={pdv_Static}
-                                link={"/gol"}
+                                link={"/statsForPlaylist"}
                             />
                             <ProjectCardTemplate
                                 name={"Scotland Yard AI"}

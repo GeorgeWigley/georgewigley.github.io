@@ -11,6 +11,8 @@ import {
 import ProjectPageGol from "./components/projectPages/gol/ProjectPageGol";
 import ProjectPageWhiplash from "./components/projectPages/whiplash/ProjectPageWhiplash";
 import ProjectPageSpoonsStats from "./components/projectPages/spoonsStats/ProjectPageSpoonsStats";
+import ProjectPagePlaylistDataViewer from "./components/projectPages/playlistDataViewer/ProjectPagePlaylistDataViewer";
+import ProjectPageStatsForPlaylist from "./components/projectPages/playlistDataViewer/ProjectPagePlaylistDataViewer";
 
 let themeDark = createTheme({
     typography: {
@@ -45,6 +47,7 @@ function App() {
                         <Route path="/gol" element={<ProjectPageGol/>}/>
                         <Route path="/whiplash" element={<ProjectPageWhiplash/>}/>
                         <Route path="/spoonsStats" element={<ProjectPageSpoonsStats/>}/>
+                        <Route path="/statsForPlaylist" element={<ProjectPageStatsForPlaylist/>}/>
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
