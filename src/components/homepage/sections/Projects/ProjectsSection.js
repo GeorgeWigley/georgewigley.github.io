@@ -82,7 +82,7 @@ function ProjectsSection(props) {
                                 ]}
                                 static={spoonsStats}
                                 animated={spoonsStats}
-                                link={"/gol"}
+                                link={"/spoonsStats"}
                             />
                             <ProjectCardTemplate
                                 name={"Stats for Spotify Playlist"}

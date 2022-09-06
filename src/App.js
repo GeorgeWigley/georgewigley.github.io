@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import ProjectPageGol from "./components/projectPages/gol/ProjectPageGol";
 import ProjectPageWhiplash from "./components/projectPages/whiplash/ProjectPageWhiplash";
+import ProjectPageSpoonsStats from "./components/projectPages/spoonsStats/ProjectPageSpoonsStats";
 
 let themeDark = createTheme({
     typography: {
@@ -43,6 +44,7 @@ function App() {
                         <Route path="/" element={<Homepage/>}/>
                         <Route path="/gol" element={<ProjectPageGol/>}/>
                         <Route path="/whiplash" element={<ProjectPageWhiplash/>}/>
+                        <Route path="/spoonsStats" element={<ProjectPageSpoonsStats/>}/>
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
