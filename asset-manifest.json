@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.71bdb9ce.css",
-    "main.js": "/static/js/main.a2f02f51.js",
+    "main.js": "/static/js/main.3eab530a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/scotlandYard_Animated.gif": "/static/media/scotlandYard_Animated.1fc554c6c66b929173ea.gif",
     "static/media/whiplash_Animated.gif": "/static/media/whiplash_Animated.01f1c9994e61edfd0c1f.gif",
     "static/media/gol_Animated.gif": "/static/media/gol_Animated.9dac79b5451586a4e5b3.gif",
+    "static/media/overview.png": "/static/media/overview.50819804ae2992abbcd0.png",
     "static/media/scotlandYard_Static.gif": "/static/media/scotlandYard_Static.ef0d5e9593bfb32e2d38.gif",
     "static/media/homepage.png": "/static/media/homepage.bb23966510a8e0303025.png",
     "static/media/plasticWasteDrift.jpg": "/static/media/plasticWasteDrift.1ad804f81b24506d0768.jpg",
-    "static/media/overview.png": "/static/media/overview.50819804ae2992abbcd0.png",
     "static/media/dungeonCrawler.png": "/static/media/dungeonCrawler.55a89a4f1e30ebb4e3b5.png",
     "static/media/spoonsStats.png": "/static/media/spoonsStats.8975ed04e1f3c666c514.png",
     "static/media/genres.png": "/static/media/genres.e6aaa59d1975120f9eb7.png",
@@ -17,20 +17,23 @@
     "static/media/spe.png": "/static/media/spe.87eef6ecf7e939082af6.png",
     "static/media/map.png": "/static/media/map.a2bbf87d8e5488cdf08d.png",
     "static/media/whiplash_Static.gif": "/static/media/whiplash_Static.b291c9e63a1d96b49307.gif",
+    "static/media/mrX.png": "/static/media/mrX.1ea3b3db5a8d2dd73579.png",
     "static/media/diagram.png": "/static/media/diagram.d47c8bdc5c76264b5d14.png",
     "static/media/PDV_Static.jpg": "/static/media/PDV_Static.950692eb0ea0cb77bee0.jpg",
     "static/media/contours.svg": "/static/media/contours.a72c49719446359bbb22c8246d7b1ee3.svg",
     "static/media/gol_Static.jpg": "/static/media/gol_Static.3336ca9e117121a65099.jpg",
+    "static/media/minimax.png": "/static/media/minimax.dbad966ac11b9ce90e81.png",
+    "static/media/floyd-warshall.png": "/static/media/floyd-warshall.076b51b1ed0d71b4e8f3.png",
     "static/media/graph.png": "/static/media/graph.944ae5e553de708be943.png",
     "static/media/gol.jpg": "/static/media/gol.94162dee4e375b8447dc.jpg",
     "static/media/colours.png": "/static/media/colours.c89bae2fc0c7c7e23ffa.png",
     "index.html": "/index.html",
     "main.71bdb9ce.css.map": "/static/css/main.71bdb9ce.css.map",
-    "main.a2f02f51.js.map": "/static/js/main.a2f02f51.js.map",
+    "main.3eab530a.js.map": "/static/js/main.3eab530a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71bdb9ce.css",
-    "static/js/main.a2f02f51.js"
+    "static/js/main.3eab530a.js"
   ]
 }
