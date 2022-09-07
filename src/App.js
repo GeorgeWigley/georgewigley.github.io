@@ -13,6 +13,7 @@ import ProjectPageWhiplash from "./components/projectPages/whiplash/ProjectPageW
 import ProjectPageSpoonsStats from "./components/projectPages/spoonsStats/ProjectPageSpoonsStats";
 import ProjectPagePlaylistDataViewer from "./components/projectPages/playlistDataViewer/ProjectPagePlaylistDataViewer";
 import ProjectPageStatsForPlaylist from "./components/projectPages/playlistDataViewer/ProjectPagePlaylistDataViewer";
+import ProjectPageScotlandYard from "./components/projectPages/scotlandYard/ProjectPageScotlandYard";
 
 let themeDark = createTheme({
     typography: {
@@ -48,6 +49,7 @@ function App() {
                         <Route path="/whiplash" element={<ProjectPageWhiplash/>}/>
                         <Route path="/spoonsStats" element={<ProjectPageSpoonsStats/>}/>
                         <Route path="/statsForPlaylist" element={<ProjectPageStatsForPlaylist/>}/>
+                        <Route path="/scotlandYard" element={<ProjectPageScotlandYard/>}/>
                     </Routes>
                 </HashRouter>
             </ThemeProvider>
