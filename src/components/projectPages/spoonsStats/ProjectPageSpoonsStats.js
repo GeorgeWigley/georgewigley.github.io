@@ -10,7 +10,7 @@ import map from "./map.png";
 function ProjectPageSpoonsStats(props) {
     return (
         <div>
-            <ProjectPageTitle title={"Spoons Stats"} demoLink={"https://spoons-stats.herokuapp.com/"}/>
+            <ProjectPageTitle title={"Spoons Stats"} demoLink={"https://spoons-stats.herokuapp.com/"} date={"August 2022 - September 2022"}/>
             <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} mt={5} width={"100%"} p={2}>
                 <ProjectPageImageTextOne subTitle={"Project Overview"}
                                          subText={`This project is a stat tracker for Wetherspoons, a chain of pubs in the UK. The project compiles all the users

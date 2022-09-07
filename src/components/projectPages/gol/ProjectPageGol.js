@@ -9,7 +9,7 @@ import ProjectPageImageTextOne from "../ProjectPageComponents/ProjectPageImageTe
 function ProjectPageGol(props) {
     return (
         <div>
-            <ProjectPageTitle title={"Parallel Game of Life"}/>
+            <ProjectPageTitle title={"Game of Life"} date={"September 2021 - December 2021"}/>
             <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} mt={5} width={"100%"} p={2}>
                 <ProjectPageImageTextOne subTitle={"Project Overview"}
                                          subText={`This project involved first developing a game of life simulator in the Go programming language and then,

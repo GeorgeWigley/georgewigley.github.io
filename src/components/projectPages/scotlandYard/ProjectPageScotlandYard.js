@@ -10,7 +10,7 @@ import minimax from "./minimax.png";
 function ProjectPageScotlandYard(props) {
     return (
         <div>
-            <ProjectPageTitle title={"Scotland Yard AI"}/>
+            <ProjectPageTitle title={"Scotland Yard AI"} date={"February 2021 - June 2021"}/>
             <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} mt={5} width={"100%"} p={2}>
                 <ProjectPageImageTextOne subTitle={"Project Overview"}
                                          subText={`This project was a 2 person university coursework comprised of 2 components, the first being to create a functional version

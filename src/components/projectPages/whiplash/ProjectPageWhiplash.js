@@ -7,7 +7,7 @@ import ProjectPageBackButton from "../ProjectPageComponents/ProjectPageBackButto
 function ProjectPageWhiplash(props) {
     return (
         <div>
-            <ProjectPageTitle title={"Whiplash"}/>
+            <ProjectPageTitle title={"Whiplash"} date={"March 2020 - October 2020"}/>
             <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} mt={5} width={"100%"} p={2}>
                 <ProjectPageImageTextOne subTitle={"Project Overview"}
                                          subText={"Whiplash is a 3D speed running and platforming video game developed in Unity with heavy usage of C#. I was the sole developer on the project and took a lead in graphics and art as well.\n" +

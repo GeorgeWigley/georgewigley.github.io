@@ -10,7 +10,7 @@ import map from "./map.png";
 function ProjectPageStatsForPlaylist(props) {
     return (
         <div>
-            <ProjectPageTitle title={"Stats for Spotify Playlist"} demoLink={"https://playlist-vis.herokuapp.com/"}/>
+            <ProjectPageTitle title={"Stats for Spotify Playlist"} demoLink={"https://playlist-vis.herokuapp.com/"} date={"June 2022 - August 2022"}/>
             <Stack direction={"column"} justifyContent={"center"} alignItems={"center"} mt={5} width={"100%"} p={2}>
                 <ProjectPageImageTextOne subTitle={"Project Overview"}
                                          subText={`This project is a social media story of stats about a given spotify playlist. It is heavily inspired
