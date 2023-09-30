@@ -31,7 +31,7 @@ function OverviewSection(props) {
                     animate={{opacity: 1, y: 0}}
                     transition={{duration: 0.2, delay: 0.25}}>
                     <Typography variant={`h5`} textAlign={`center`} color={"#868686"}>
-                        Computer Science Student @ <a href={"https://www.bristol.ac.uk/"}
+                        Computer Science MEng Student @ <a href={"https://www.bristol.ac.uk/"}
                                                       style={{textDecoration: "none", color: "#868686"}}>University of
                         Bristol</a>
                     </Typography>

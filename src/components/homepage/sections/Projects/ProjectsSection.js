@@ -1,6 +1,9 @@
 import React, {useEffect} from 'react';
 import {Box, Divider, Grid, Tooltip, Typography} from "@mui/material";
 import ProjectCardTemplate from "./ProjectCardTemplate";
+import cg_static from "./computerGraphics/cg.png";
+import cg_animated from "./computerGraphics/cg_animated.gif";
+import games_project from "./gamesProject/gamesproject.png";
 import gol_Static from "./gameOfLife/gol_Static.jpg";
 import gol_Animated from "./gameOfLife/gol_Animated.gif";
 import whiplash_Static from "./whiplash/whiplash_Static.gif";
@@ -13,9 +16,35 @@ import spoonsStats from "./spoonsStats/spoonsStats.png";
 import dungeonCrawler from "./dungeonCrawler/dungeonCrawler.png";
 import spe from "./spe/spe.png";
 import {
-    SiAdobephotoshop, SiAmazonaws, SiBlender, SiCplusplus, SiCsharp, SiExpress, SiGnubash, SiGo, SiGooglecloud,
-    SiHeroku, SiIbm, SiIntellijidea, SiJava, SiJavascript, SiNodedotjs, SiOpengl, SiPostgresql, SiPycharm, SiPython,
-    SiReact, SiSpotify, SiSpringboot, SiSteam, SiUnity, SiWikidata, SiWikipedia
+    SiAdobephotoshop,
+    SiAmazonaws,
+    SiBlender,
+    SiCplusplus,
+    SiCsharp,
+    SiExpress,
+    SiGnubash,
+    SiGo,
+    SiGooglecloud,
+    SiHeroku,
+    SiIbm,
+    SiIntellijidea,
+    SiJava,
+    SiJavascript,
+    SiNodedotjs,
+    SiOpencv,
+    SiOpengl,
+    SiPostgresql,
+    SiPycharm,
+    SiPython,
+    SiReact,
+    SiSpotify,
+    SiSpringboot,
+    SiSteam,
+    SiUnity,
+    SiValve,
+    SiVirtualbox,
+    SiWikidata,
+    SiWikipedia
 } from "react-icons/si";
 import {BiNetworkChart} from "react-icons/bi";
 import {IconContext} from "react-icons";
@@ -40,18 +69,38 @@ function ProjectsSection(props) {
                       height={`100%`}>
                     <Grid item xs={12} width={"100%"}>
                             <Typography variant={"h2"} textAlign={"left"} p={3}>
-                                Some of my projects
+                                My Personal Projects:
                             </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Grid container p={3} pt={2} width={`100%`} spacing={2}>
                             <ProjectCardTemplate
-                                name={"Parallel Game of Life"}
+                                name={"Games Project"}
                                 tools={[
-                                    <SiGo key={2}/>,
-                                    <SiAmazonaws key={1}/>,
-                                    <SiGnubash key={3}/>,
-                                    <SiIntellijidea key={4}/>
+                                    <SiUnity key={2}/>,
+                                    <SiBlender key={1}/>,
+                                    <SiCsharp key={3}/>,
+                                    <SiPython key={4}/>,
+                                ]}
+                                static={games_project}
+                                animated={games_project}
+                                link={"/gol"}
+                            />
+                            <ProjectCardTemplate
+                                name={"Computer Graphics"}
+                                tools={[
+                                    <SiCplusplus key={2}/>
+                                ]}
+                                static={cg_static}
+                                animated={cg_animated}
+                                link={"/gol"}
+                            />
+                            <ProjectCardTemplate
+                                name={"Image Processing and Computer Vision"}
+                                tools={[
+                                    <SiPython key={2}/>,
+                                    <SiOpencv key={1}/>,
+                                    <SiOpengl key={3}/>
                                 ]}
                                 static={gol_Static}
                                 animated={gol_Animated}
